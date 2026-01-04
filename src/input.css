@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@layer utilities{
+    .nav-btn{
+    line-height: 1;
+    border-radius: 2.188rem;
+    text-decoration: none;
+    color: #101a41;
+    margin: 0.625rem;
+    padding: 0.625rem 2.188rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+    .nav-bar{
+    font-family: Outfit;
+    border: 1px solid rgb(0, 0, 0);
+    transition: all 0.3s ease;
+    }
+    
+    .logo {
+    font-family: Plus Jakarta Sans;
+    color: transparent;
+    animation: animate 20s linear infinite;
+    text-shadow: 0 0 0 rgba(152, 152, 152, 0.2);
+    background-image: url(/Images/vecteezy_background-and-texture-on-low-light_11974564.jpg);
+}
+    .animate-logo {
+  animation: animate-logo 20s linear infinite;
+}
+  #contactBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#contactBtn .icons {
+  display: flex;
+  gap: 10px;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-width 0.4s ease, opacity 0.3s ease;
+}
+
+#contactBtn.active .icons {
+  max-width: 400px;
+  opacity: 1;
+}
+
+.nav-bar.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #8cc7e7;
+  padding: 1rem;
+  border-radius: 0 0 45px 45px;
+  z-index: 10;
+  gap: 10px;
+
+}
+.nav-bar.active .nav-btn{
+  border-radius: 0px;
+  width: 100%;
+  font-size: 20px;
+}
+@media screen and (max-width: 890px) {
+    #contactBtn.active{
+    width: 210px;
+  }
+  #contactBtn {
+  justify-content: center;
+  }
+    .main-menu {
+        display: flex;
+        z-index: 10000;
+    }
+    .nav-bar {
+        position: fixed;
+        top: 60px;
+        height: 100vh;
+        transition: transform 0.35s ease;
+        transform: translateX(-100%);
+        z-index: 9998;
+        margin: 0;
+        padding-top: 15px;
+        border: none;
+    }
+    .nav-bar.active {
+        transition: transform 0.35s ease-in;
+        transform: translateX(0);
+    }  
+    .nav-btn-con {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .nav-bar.active .logo {
+        display: none;
+    }
+    .nav-bar .logo {
+        display: none;
+    }
+    .nav-btn {
+        width: 50%;
+        text-align: center;
+        padding: 8px 12px;
+        border-radius: 25px;
+    }
+  }
+@media (max-width: 1150px) { /* Tailwind's md breakpoint */
+  .nav-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+ 
+}
+
+}
+@keyframes animate-logo {
+    from {
+    background-position-x: 0px;
+  }
+    to{
+        background-position-x: -500px;
+    }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity:1;
+    scale:1;
+  }
+}
+.appear-ani {
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+
+    @keyframes fadeup {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity:1;
+    transform: translateY(0px) scale(1);
+  }
+}
+   @keyframes fadedown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity:1;
+    transform: translateY(0px) scale(1);
+  }
+}
+.fade-up {
+  animation: fadeup 0.5s;
+}
+.fade-down {
+  animation: fadedown 0.5s;
+}
