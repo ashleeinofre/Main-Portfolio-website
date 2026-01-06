@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-@layer utilities{
-    .nav-btn{
+@layer utilities {
+  .nav-btn {
     line-height: 1;
     border-radius: 2.188rem;
     text-decoration: none;
@@ -9,164 +9,263 @@
     margin: 0.625rem;
     padding: 0.625rem 2.188rem;
     border: 1px solid transparent;
-    transition: all 0.3s ease;
-}
-    .nav-bar{
+  }
+
+  .nav-bar {
     font-family: Outfit;
     border: 1px solid rgb(0, 0, 0);
-    transition: all 0.3s ease;
-    }
-    
-    .logo {
+  }
+
+  .logo {
     font-family: Plus Jakarta Sans;
     color: transparent;
     animation: animate 20s linear infinite;
-    text-shadow: 0 0 0 rgba(152, 152, 152, 0.2);
-    background-image: url("../Images/logobg.jpg");
-}
-    .animate-logo {
-  animation: animate-logo 20s linear infinite;
-}
-  #contactBtn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-#contactBtn .icons {
-  display: flex;
-  gap: 10px;
-  max-width: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-width 0.4s ease, opacity 0.3s ease;
-}
-
-#contactBtn.active .icons {
-  max-width: 400px;
-  opacity: 1;
-}
-
-.nav-bar.active {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 0;
-  right: 0;
-  background: #8cc7e7;
-  padding: 1rem;
-  border-radius: 0 0 45px 45px;
-  z-index: 10;
-  gap: 10px;
-
-}
-.nav-bar.active .nav-btn{
-  border-radius: 0px;
-  width: 100%;
-  font-size: 20px;
-}
-@media screen and (max-width: 890px) {
-    #contactBtn.active{
-    width: 210px;
+    background-image: url("../Images/logobackg.jpg");
   }
-  #contactBtn {
-  justify-content: center;
+
+  .animate-logo {
+    animation: animate-logo 20s linear infinite;
   }
+
+  #contactBtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  #contactBtn .icons {
+    display: flex;
+    gap: 10px;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-width 0.4s ease, opacity 0.3s ease;
+  }
+
+  #contactBtn.active .icons {
+    max-width: 400px;
+    opacity: 1;
+  }
+
+  .nav-bar.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #8cc7e7;
+    padding: 1rem;
+    border-radius: 0 0 45px 45px;
+    z-index: 10;
+    gap: 10px;
+
+  }
+
+  .nav-bar.active .nav-btn {
+    border-radius: 0px;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .outfit {
+    font-family: Outfit;
+  }
+
+  .b-border {
+    border: 1px solid rgb(0, 0, 0);
+  }
+
+  .strokes {
+    -webkit-text-stroke-color: #0a102a;
+    -webkit-text-stroke-width: 0.7px;
+  }
+
+  .card {
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 12px 12px 0 #0a102a;
+    border: 0.7px solid #0a102a;
+  }
+
+  .card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 17px 17px 0 #0a102a;
+    transition: all 0.2s ease;
+    background-color: #99dbff;
+  }
+
+  .card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a102a;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #0a102a;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+
+  .card:hover .card-title::after {
+    transform: translateX(0);
+  }
+
+  .scroll-blur {
+    transition: filter 0.12s linear;
+    will-change: filter;
+  }
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 890px) {
+    #contactBtn.active {
+      width: 210px;
+    }
+
+    #contactBtn {
+      justify-content: center;
+    }
+
     .main-menu {
-        display: flex;
-        z-index: 10000;
+      display: flex;
+      z-index: 10000;
     }
+
     .nav-bar {
-        position: fixed;
-        top: 60px;
-        height: 100vh;
-        transition: transform 0.35s ease;
-        transform: translateX(-100%);
-        z-index: 9998;
-        margin: 0;
-        padding-top: 15px;
-        border: none;
+      position: fixed;
+      top: 60px;
+      height: 100vh;
+      transition: transform 0.35s ease;
+      transform: translateX(-100%);
+      z-index: 9998;
+      margin: 0;
+      padding-top: 15px;
+      border: none;
     }
+
     .nav-bar.active {
-        transition: transform 0.35s ease-in;
-        transform: translateX(0);
-    }  
+      transition: transform 0.35s ease-in;
+      transform: translateX(0);
+    }
+
     .nav-btn-con {
-        flex-direction: column;
-        gap: 30px;
+      flex-direction: column;
+      gap: 30px;
     }
+
     .nav-bar.active .logo {
-        display: none;
+      display: none;
     }
+
     .nav-bar .logo {
-        display: none;
+      display: none;
     }
+
     .nav-btn {
-        width: 50%;
-        text-align: center;
-        padding: 8px 12px;
-        border-radius: 25px;
+      width: 50%;
+      text-align: center;
+      padding: 8px 12px;
+      border-radius: 25px;
     }
   }
-@media (max-width: 1150px) { /* Tailwind's md breakpoint */
-  .nav-btn {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.9rem;
+
+
+
+
+
+
+  @media (max-width: 1180px) {
+
+    .nav-btn {
+      padding: 0.4rem 0.8rem;
+      font-size: 1rem;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+    }
   }
-  .logo {
-    font-size: 1.2rem;
-  }
- 
-}
 
 }
+
 @keyframes animate-logo {
-    from {
+  from {
     background-position-x: 0px;
   }
-    to{
-        background-position-x: -500px;
-    }
+
+  to {
+    background-position-x: -528px;
+  }
 }
+
 @keyframes appear {
   from {
     opacity: 0;
     scale: 0.5;
   }
+
   to {
-    opacity:1;
-    scale:1;
+    opacity: 1;
+    scale: 1;
   }
 }
-.appear-ani {
-      animation: appear linear;
-      animation-timeline: view();
-      animation-range: entry 0% cover 40%;
-    }
 
-    @keyframes fadeup {
+.appear-ani {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes fadeup {
   0% {
     opacity: 0;
     transform: translateY(30px) scale(0.9);
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
     transform: translateY(0px) scale(1);
   }
 }
-   @keyframes fadedown {
+
+@keyframes fadedown {
   0% {
     opacity: 0;
     transform: translateY(-30px) scale(0.9);
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
     transform: translateY(0px) scale(1);
   }
 }
+
 .fade-up {
   animation: fadeup 0.5s;
 }
+
 .fade-down {
   animation: fadedown 0.5s;
+}
+
+.resize-t {
+  transition: all 0.2s ease;
 }

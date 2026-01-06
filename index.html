@@ -1,100 +1,148 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="main/styles.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
 </head>
-<body class="bg-[#e1f5ff] h-screen">
-    <div id="main-menu" class="absolute top-0 left-0 w-full z-50 flex bg-[#8cc7e7] text-center">
-       <button class="text-6xl min-[890px]:hidden text-[#101a41]">≡</button>
-    </div>
-    <nav class="nav-bar bg-[#8cc7e7] rounded-[45px] mt-7 mx-auto mb-0 py-0 px-2.5 w-fit max-[890px]:hidden fade-down">
-    <!----.nav-bar{
+
+<body class="bg-amber-50">
+  <div id="home-section"></div>
+  <div id="main-menu" class="fixed top-0 left-0 w-full z-50 flex bg-[#8cc7e7] text-center">
+    <button class="text-6xl min-[890px]:hidden text-[#101a41]">≡</button>
+  </div>
+  <div class="navbar sticky top-0 z-1000 pt-1">
+    <nav class="nav-bar resize-t bg-[#99dbff] rounded-[45px] mt-7 mx-auto mb-0 py-0 px-2.5 w-fit 
+      max-[890px]:hidden fade-down">
+      <!----.nav-bar{
     font-family: Outfit;
     border: 1px solid rgb(255, 255, 255);
+
+
+
+    shadow-[0px_0px_40px_rgba(0,0,0,0.8)] shadow-[#101a41]
     }-->
-    <div class="flex text-center justify-center items-center [&_a]:hover:bg-[#b1e6ff] 
-    [&_a]:hover:border-black [&_a]:hover:shadow rounded-[45px] max-[890px]:flex-col max-[890px]:gap-5">
-      <a class="nav-btn w-32 max-[1180px]:w-22 max-[1180px]:gap-1.25" href="#">Home</a>
-      <a class="nav-btn w-32 max-[1180px]:w-22 max-[1180px]:gap-1.25" href="#">About</a>
-      <a class="nav-btn w-32 max-[1180px]:w-22 max-[1180px]:gap-1.25" href="#">Skills</a>  
-      <h1 class="logo font-black text-2xl tracking-tighter bg-cover bg-clip-text my-4 mx-1.5 animate-logo">PORTFOLIO</h1>
-      <!----- font-family: Plus Jakarta Sans;
+      <div class="flex text-center justify-center items-center [&_a]:hover:bg-[#ffffff] 
+    [&_a]:hover:border-[#0a102a] [&_a]:hover:shadow rounded-[45px] max-[890px]:flex-col max-[890px]:gap-5">
+        <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#home-section">Home</a>
+        <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#about-section">About</a>
+        <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#skills-section">Skills</a>
+        <h1 class="logo font-black text-2xl tracking-tighter bg-cover bg-clip-text my-4 mx-1.5 animate-logo">PORTFOLIO
+        </h1>
+        <!----- font-family: Plus Jakarta Sans;
     color: transparent;
     animation: animate 20s linear infinite;
     text-shadow: 0 0 0 rgba(152, 152, 152, 0.2);
     background-image: url(/Images/whiteandblue.jpg);-->
-      <a class="nav-btn w-32 max-[1180px]:w-24 max-[1180px]:gap-1.25" href="#">Projects</a>
-      <a class="nav-btn w-32 max-[1180px]:w-24 max-[1180px]:gap-1.25" href="#">Resume</a>
-      <div id="contactBtn" class="nav-btn hover:border-black hover:shadow hover:bg-[#b1e6ff] max-[1180px]:gap-1"><span>Contact</span>
-            <div class="icons">
-                <a href="#" class="icon icon-link"><i class="fab fa-facebook-f" target="_blank"></i></a>
-                <a href="#" class="icon icon-link"><i class="fab fa-twitter" target="_blank"></i></a>
-                <a href="https://www.instagram.com/ferdy_crochet/" class="icon icon-link" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com" class="icon icon-link" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </div>
-  </nav>
-  <main>
-    <div>
-        <h1 class="m-0 p-0 text-center text-8xl font-black text-[#8cc7e7] [-webkit-text-stroke:0.7px_black]
-         max-[1170px]:text-7xl max-[890px]:pt-16 max-[980px]:text-6xl max-[735px]:text-5xl relative top-1 fade-up">
-          FRONT-END DEVELOPER</h1>
-        <div class="flex items-center justify-center gap-6 mx-auto mt-3 max-w-5xl px-4 fade-up 
-        max-[600px]:flex-col max-[600px]:gap-2"> 
-          <img src="./Images/Untitled1_20260104045846.png" alt="..." class="w-3xs max-[900px]:w-50">
-          <p class="text-justify w-120 max-[600px]:w-90">Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#projects-section">Projects</a>
+        <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#">Resume</a>
+        <div id="contactBtn"
+          class="nav-btn resize-t hover:border-[#0a102a] hover:shadow hover:bg-[#ffffff] max-[1180px]:gap-1">
+          <span>Contact</span>
+          <div class="icons">
+            <a href="#" class="icon icon-link"><i class="fab fa-facebook-f" target="_blank"></i></a>
+            <a href="#" class="icon icon-link"><i class="fab fa-twitter" target="_blank"></i></a>
+            <a href="https://www.instagram.com/ferdy_crochet/" class="icon icon-link" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://github.com" class="icon icon-link" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
         </div>
       </div>
-      <section class="m-7">
-        About Section Here
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </section>
-      <section>
-        Skills Section Here
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </section>
-      <section>
-        Projects Section Here
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </section>
-      <section class="appear-ani bg-amber-200 w-2xs">
-        Resume Section Here
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </section>
-    </main>
+    </nav>
+  </div>
+  <main>
+    <div class="mb-10">
+      <h1 class="resize-t scroll-blur m-0 p-0 text-center text-[96px] font-black text-[#8cc7e7] 
+        max-[1180px]:text-7xl max-[890px]:pt-16 max-[890px]:top-4 max-[980px]:text-6xl max-[740px]:text-5xl 
+        relative fade-up strokes max-[1180px]:py-6">
+        FRONT-END DEVELOPER</h1>
+      <div class="scroll-blur flex items-center justify-center gap-6 mx-auto max-w-5xl px-4 fade-up 
+        max-[600px]:flex-col max-[600px]:gap-2 max-[890px]:mt-10">
+        <img src="./Images/Untitled1_20260104045846.png" alt="..." class="w-[320px] max-[900px]:w-50">
+        <p class="text-justify w-120 max-[600px]:text-center max-[600px]:w-90 outfit text-[20px]">Aspiring front-end
+          developer focused on building
+          responsive,
+          user-friendly interfaces. I enjoy turning designs into clean, functional experiences while continuously
+          improving my front-end skills. </p>
+      </div>
+    </div>
+    <section class="p-4 bg-[#8cc7e7] scroll-mt-30" id="about-section">
+      <div class="m-4 text-justify fade-up">
+        <h1 class="scroll-blur text-6xl text-center font-black text-[#ffffff] strokes mb-4">ABOUT ME</h1>
+        <div class="flex flex-row outfit justify-center max-[600px]:flex-col max-[600px]:items-center">
+          <div class="w-80 h-80 self-center mr-4 max-[890px]:hidden resize-t scroll-blur">
+            <img src="./Images/Untitled1_20260104045846.png" alt="...">
+          </div>
+          <div class="bg-white m-3 card p-12 max-[1180px]:p-5 resize-t max-[600px]:w-100 w-[320px] scroll-blur">
+            <h2 class="text-2xl card-title max-[1180px]:text-[20px]">What I Do</h2>
+            <p class="max-[1180px]:text-[14px]">I focus on building responsive, user-friendly interfaces that adapt
+              smoothly across different screen
+              sizes.Most of my experience comes from creating and refining personal projects, where I turn designs into
+              clean,functional layouts.</p>
+          </div>
+          <div class="bg-white m-3 card p-12 max-[1180px]:p-5 resize-t max-[600px]:w-100 w-[320px] scroll-blur">
+            <h2 class="text-2xl card-title max-[1180px]:text-[15px]">How I Work</h2>
+            <p class="max-[1180px]:text-[14px]">I enjoy problem-solving and improving small details that enhance
+              usability. I value clean structure,
+              maintainable code,
+              and layouts that work well in real-world use, not just on one screen size.</p>
+          </div>
+          <div class="bg-white m-3 card p-12 max-[1180px]:p-5 resize-t max-[600px]:w-100 w-[320px] scroll-blur">
+            <h2 class="text-2xl card-title max-[1180px]:text-[20px]">My Goals</h2>
+            <p class="max-[1180px]:text-[14px]">I aim to grow as a front-end developer by working on real-world projects
+              that challenge my skills and
+              improve my
+              understanding of modern interfaces. I am focused on building practical experience while contributing to
+              clean, user-centered designs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills-section" class="mt-30">
+      <h2>Skills Section Here</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+        unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
+        text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+        unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
+        text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </section>
+    <section id="projects-section" class="mt-30">
+      Projects Section Here
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+        unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
+        text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+        unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
+        text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </section>
+    <section class="appear-ani bg-amber-200 w-2xs">
+      Resume Section Here
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+        unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
+        text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+        unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
+        text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </section>
+  </main>
   <script src="script.js"></script>
 </body>
+
 </html>
