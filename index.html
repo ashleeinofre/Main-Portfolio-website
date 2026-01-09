@@ -10,6 +10,8 @@
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
 </head>
 
 <body class="bg-amber-50">
@@ -40,7 +42,7 @@
     animation: animate 20s linear infinite;
     text-shadow: 0 0 0 rgba(152, 152, 152, 0.2);
     background-image: url(/Images/whiteandblue.jpg);-->
-        <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#projects-section">Projects</a>
+        <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#certification-section">Certs</a>
         <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#">Resume</a>
         <div id="contactBtn"
           class="nav-btn resize-t hover:border-[#0a102a] hover:shadow hover:bg-[#ffffff] max-[1180px]:gap-1">
@@ -73,7 +75,7 @@
       </div>
     </div>
     <section class="p-4 bg-[#8cc7e7] scroll-mt-30" id="about-section">
-      <div class="m-4 text-justify fade-up">
+      <div class="m-4 text-justify appear-ani">
         <h1 class="scroll-blur text-6xl text-center font-black text-[#ffffff] strokes mb-4">ABOUT ME</h1>
         <div class="flex flex-row outfit justify-center max-[600px]:flex-col max-[600px]:items-center">
           <div class="w-80 h-80 self-center mr-4 max-[890px]:hidden resize-t scroll-blur">
@@ -105,20 +107,124 @@
       </div>
     </section>
 
-    <section id="skills-section" class="mt-30">
-      <h2>Skills Section Here</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
-        text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
-        text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <section id="skills-section" class="m-25 mt-10 scroll-mt-25">
+      <div class="appear-ani">
+        <h2 class="text-[#8cc7e7] text-center text-6xl strokes p-10 pb-0 font-black scroll-blur">SKILLS</h2>
+        <p class="text-[#8cc7e7] text-center text-3xl strokes pt-10 pb-5 font-black scroll-blur">Web Development</p>
+        <ul class="outfit s-card flex flex-wrap justify-center [&_li]:bg-white [&_li]:m-3 [&_li]:rounded-2xl 
+         [&_img]:w-30 ">
+          <li class="p-5 w-60 card hover:bg-gray-400 scroll-blur">
+            <img class="my-0 mx-auto"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+              <div>
+                <h3 class="text-[18px] font-medium">Begginer/Intermediate</h3>
+                <p>-Comfortable styling layouts, colors, fonts.</p>
+                <p>-Learning to predict outcomes without preview.</p>
+                <p>-Familiar with flexbox, responsive design, and pseudo-classes.</p>
+              </div>
+            </div>
+          </li>
+          <li class="p-5 w-60 card scroll-blur">
+            <img class="my-0 mx-auto"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+              <div>
+                <h3 class="text-[18px] font-medium">Begginer/Intermediate</h3>
+                <p>-Comfortable structuring pages with semantic elements.</p>
+                <p>-Familiar with forms, inputs, and embedding media.</p>
+                <p>-Understanding accessibility basics (labels, alt text, headings).</p>
+              </div>
+            </div>
+          </li>
+          <li class="p-5 w-60 card scroll-blur">
+            <img class="my-0 mx-auto"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+              <h3 class="text-[18px] font-medium">Begginer</h3>
+              <p>-Can use utility classes for spacing, colors, and fonts.</p>
+              <p>-Can build simple responsive layouts.</p>
+              <p>-Comfortable styling buttons, cards, and text quickly.</p>
+            </div>
+          </li>
+          <li class="p-5 w-60 card scroll-blur">
+            <img class="my-0 mx-auto"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+              <h3 class="text-[18px] font-medium">Begginer</h3>
+              <p>-Can write basic variables, functions, and loops.</p>
+              <p>-Can handle simple events and DOM changes.</p>
+              <p>-Still learning to structure code and debug independently.</p>
+            </div>
+          </li>
+          <li class="p-5 w-60 card scroll-blur">
+            <img class="my-0 mx-auto"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+              <h3 class="text-[18px] font-medium">Begginer</h3>
+              <p>-Can write basic variables, functions, and loops.</p>
+              <p>-Can handle simple events and DOM changes.</p>
+              <p>-Still learning to structure code and debug independently.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="appear-ani">
+        <p class="text-[#8cc7e7] text-center text-3xl strokes pt-10 pb-5 font-black">DMS and UI/UX</p>
+        <ul class="outfit s-card flex flex-wrap justify-center [&_li]:bg-white [&_li]:m-3 [&_li]:rounded-2xl 
+         [&_img]:w-30 ">
+          <li class="p-5 w-60 card hover:bg-gray-400 scroll-blur">
+            <img class="my-0 mx-auto"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+              <div>
+                <h3 class="text-[18px] font-medium">Begginer/Intermediate</h3>
+                <p>-Comfortable styling layouts, colors, fonts.</p>
+                <p>-Learning to predict outcomes without preview.</p>
+                <p>-Familiar with flexbox, responsive design, and pseudo-classes.</p>
+              </div>
+            </div>
+          </li>
+          <li class="p-5 w-60 card scroll-blur">
+            <img class="my-0 mx-auto"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+              <div>
+                <h3 class="text-[18px] font-medium">Begginer/Intermediate</h3>
+                <p>-Comfortable structuring pages with semantic elements.</p>
+                <p>-Familiar with forms, inputs, and embedding media.</p>
+                <p>-Understanding accessibility basics (labels, alt text, headings).</p>
+              </div>
+            </div>
+          </li>
+          <li class="p-5 w-60 card scroll-blur">
+            <img class="my-0 mx-auto"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+              <div>
+                <h3 class="text-[18px] font-medium">Begginer/Intermediate</h3>
+                <p>-Comfortable structuring pages with semantic elements.</p>
+                <p>-Familiar with forms, inputs, and embedding media.</p>
+                <p>-Understanding accessibility basics (labels, alt text, headings).</p>
+              </div>
+            </div>
+          </li>
+          <li class="p-5 w-60 card scroll-blur">
+            <img class="my-0 mx-auto"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+              <div>
+                <h3 class="text-[18px] font-medium">Begginer/Intermediate</h3>
+                <p>-Comfortable structuring pages with semantic elements.</p>
+                <p>-Familiar with forms, inputs, and embedding media.</p>
+                <p>-Understanding accessibility basics (labels, alt text, headings).</p>
+              </div>
+            </div>
+          </li>
+      </div>
     </section>
-    <section id="projects-section" class="mt-30">
-      Projects Section Here
+    <section id="certifiaction-section" class="mt-30">
+      <h2>Certifications Section Here</h2>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
         unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy

@@ -62,8 +62,8 @@ window.addEventListener("scroll", () => {
         const top = rect.top;
 
         // start blurring BEFORE it hits navbar
-        const blurStart = 20;   // px from top
-        const blurEnd = -60;     // fully gone
+        const blurStart = 5;   // px from top
+        const blurEnd = -20;     // fully gone
         const maxBlur = 12;
 
         let blur = 0;
