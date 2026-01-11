@@ -19,38 +19,27 @@
   <div id="main-menu" class="fixed top-0 left-0 w-full z-50 flex bg-[#8cc7e7] text-center">
     <button class="text-6xl min-[890px]:hidden text-[#101a41]">≡</button>
   </div>
+  <!----------NAVIGATION BAR-->
   <div class="navbar sticky top-0 z-1000 pt-1">
-    <nav class="nav-bar resize-t bg-[#99dbff] rounded-[45px] mt-7 mx-auto mb-0 py-0 px-2.5 w-fit 
+    <nav class="nav-bar resize-t bg-[#8cc7e7] rounded-[45px] mt-7 mx-auto mb-0 py-0 px-2.5 w-fit 
       max-[890px]:hidden fade-down">
-      <!----.nav-bar{
-    font-family: Outfit;
-    border: 1px solid rgb(255, 255, 255);
-
-
-
-    shadow-[0px_0px_40px_rgba(0,0,0,0.8)] shadow-[#101a41]
-    }-->
-      <div class="flex text-center justify-center items-center [&_a]:hover:bg-[#ffffff] 
-    [&_a]:hover:border-[#0a102a] [&_a]:hover:shadow rounded-[45px] max-[890px]:flex-col max-[890px]:gap-5">
-        <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#home-section">Home</a>
-        <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#about-section">About</a>
-        <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#skills-section">Skills</a>
+      <div class="flex text-center justify-center items-center [&_a]:hover:bg-[#c1c1c1] 
+    [&_a]:border-[#0a102a] rounded-[45px] max-[890px]:flex-col max-[890px]:gap-5">
+        <a class="nav-btn w-32 resize-t" href="#home-section">Home</a>
+        <a class="nav-btn w-32 resize-t" href="#about-section">About</a>
+        <a class="nav-btn w-32 resize-t" href="#skills-section">Skills</a>
         <h1 class="logo font-black text-2xl tracking-tighter bg-cover bg-clip-text my-4 mx-1.5 animate-logo">PORTFOLIO
         </h1>
-        <!----- font-family: Plus Jakarta Sans;
-    color: transparent;
-    animation: animate 20s linear infinite;
-    text-shadow: 0 0 0 rgba(152, 152, 152, 0.2);
-    background-image: url(/Images/whiteandblue.jpg);-->
-        <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#certification-section">Certs</a>
-        <a class="nav-btn resize-t w-32 max-[1180px]:w-20 max-[1180px]:gap-1.25" href="#">Resume</a>
-        <div id="contactBtn"
-          class="nav-btn resize-t hover:border-[#0a102a] hover:shadow hover:bg-[#ffffff] max-[1180px]:gap-1">
+        <a class="nav-btn w-32 resize-t" href="#projects-section">Projects</a>
+        <a class="nav-btn w-32 resize-t" href="#resume-section">Resume</a>
+        <div id="contactBtn" class="nav-btn resize-t hover:shadow hover:bg-[#c1c1c1] max-[1180px]:gap-1">
           <span>Contact</span>
           <div class="icons">
-            <a href="#" class="icon icon-link"><i class="fab fa-facebook-f" target="_blank"></i></a>
-            <a href="#" class="icon icon-link"><i class="fab fa-twitter" target="_blank"></i></a>
-            <a href="https://www.instagram.com/ferdy_crochet/" class="icon icon-link" target="_blank"><i
+            <a href="https://www.facebook.com/nicoleyashlee.inofre" target="_blank" class="icon icon-link"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/nicoley-ashlee-inofre-6b59a7373/" target="_blank"
+              class="icon icon-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/nico.lay.ash.lee/" target="_blank" class="icon icon-link"><i
                 class="fab fa-instagram"></i></a>
             <a href="https://github.com" class="icon icon-link" target="_blank"><i class="fab fa-github"></i></a>
           </div>
@@ -59,12 +48,13 @@
     </nav>
   </div>
   <main>
-    <div class="mb-10">
+    <!----------Landing-->
+    <div class="mb-5">
       <h1 class="resize-t scroll-blur m-0 p-0 text-center text-[96px] font-black text-[#8cc7e7] 
         max-[1180px]:text-7xl max-[890px]:pt-16 max-[890px]:top-4 max-[980px]:text-6xl max-[740px]:text-5xl 
         relative fade-up strokes max-[1180px]:py-6">
         FRONT-END DEVELOPER</h1>
-      <div class="scroll-blur flex items-center justify-center gap-6 mx-auto max-w-5xl px-4 fade-up 
+      <div class="scroll-blur flex items-center justify-center gap-6 mx-auto max-w-5xl fade-up 
         max-[600px]:flex-col max-[600px]:gap-2 max-[890px]:mt-10">
         <img src="./Images/Untitled1_20260104045846.png" alt="..." class="w-[320px] max-[900px]:w-50">
         <p class="text-justify w-120 max-[600px]:text-center max-[600px]:w-90 outfit text-[20px]">Aspiring front-end
@@ -74,8 +64,9 @@
           improving my front-end skills. </p>
       </div>
     </div>
+    <!----------About-->
     <section class="p-4 bg-[#8cc7e7] scroll-mt-30" id="about-section">
-      <div class="m-4 text-justify appear-ani">
+      <div class="m-4 text-justify fade-up">
         <h1 class="scroll-blur text-6xl text-center font-black text-[#ffffff] strokes mb-4">ABOUT ME</h1>
         <div class="flex flex-row outfit justify-center max-[600px]:flex-col max-[600px]:items-center">
           <div class="w-80 h-80 self-center mr-4 max-[890px]:hidden resize-t scroll-blur">
@@ -106,19 +97,20 @@
         </div>
       </div>
     </section>
-
-    <section id="skills-section" class="m-25 mt-10 scroll-mt-25">
+    <!----------Skills-->
+    <section id="skills-section" class="m-25 mt-2 scroll-mt-25">
       <div class="appear-ani">
         <h2 class="text-[#8cc7e7] text-center text-6xl strokes p-10 pb-0 font-black scroll-blur">SKILLS</h2>
-        <p class="text-[#8cc7e7] text-center text-3xl strokes pt-10 pb-5 font-black scroll-blur">Web Development</p>
+        <p class="text-[#8cc7e7] text-center text-3xl strokes pt-2 pb-5 font-black scroll-blur">WEB DEVELOPMENT</p>
         <ul class="outfit s-card flex flex-wrap justify-center [&_li]:bg-white [&_li]:m-3 [&_li]:rounded-2xl 
-         [&_img]:w-30 ">
+         [&_img]:w-20 ">
           <li class="p-5 w-60 card hover:bg-gray-400 scroll-blur">
             <img class="my-0 mx-auto"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+            <div class="[&_p]:text-[14px] flex flex-col [&_p]:m-1.25 text-center">
               <div>
                 <h3 class="text-[18px] font-medium">Begginer/Intermediate</h3>
+                <h4>HTML5</h4>
                 <p>-Comfortable styling layouts, colors, fonts.</p>
                 <p>-Learning to predict outcomes without preview.</p>
                 <p>-Familiar with flexbox, responsive design, and pseudo-classes.</p>
@@ -128,9 +120,10 @@
           <li class="p-5 w-60 card scroll-blur">
             <img class="my-0 mx-auto"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+            <div class="[&_p]:text-[14px] flex flex-col [&_p]:m-1.25 text-center">
               <div>
                 <h3 class="text-[18px] font-medium">Begginer/Intermediate</h3>
+                <h4>CSS3</h4>
                 <p>-Comfortable structuring pages with semantic elements.</p>
                 <p>-Familiar with forms, inputs, and embedding media.</p>
                 <p>-Understanding accessibility basics (labels, alt text, headings).</p>
@@ -140,8 +133,9 @@
           <li class="p-5 w-60 card scroll-blur">
             <img class="my-0 mx-auto"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+            <div class="[&_p]:text-[14px] flex flex-col [&_p]:m-1.25 text-center">
               <h3 class="text-[18px] font-medium">Begginer</h3>
+              <h4>Tailwind CSS</h4>
               <p>-Can use utility classes for spacing, colors, and fonts.</p>
               <p>-Can build simple responsive layouts.</p>
               <p>-Comfortable styling buttons, cards, and text quickly.</p>
@@ -150,8 +144,9 @@
           <li class="p-5 w-60 card scroll-blur">
             <img class="my-0 mx-auto"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+            <div class="[&_p]:text-[14px] flex flex-col [&_p]:m-1.25 text-center">
               <h3 class="text-[18px] font-medium">Begginer</h3>
+              <h4>Javascript</h4>
               <p>-Can write basic variables, functions, and loops.</p>
               <p>-Can handle simple events and DOM changes.</p>
               <p>-Still learning to structure code and debug independently.</p>
@@ -160,8 +155,9 @@
           <li class="p-5 w-60 card scroll-blur">
             <img class="my-0 mx-auto"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+            <div class="[&_p]:text-[14px] flex flex-col [&_p]:m-1.25 text-center">
               <h3 class="text-[18px] font-medium">Begginer</h3>
+              <h4>PHP</h4>
               <p>-Can write basic variables, functions, and loops.</p>
               <p>-Can handle simple events and DOM changes.</p>
               <p>-Still learning to structure code and debug independently.</p>
@@ -170,82 +166,80 @@
         </ul>
       </div>
       <div class="appear-ani">
-        <p class="text-[#8cc7e7] text-center text-3xl strokes pt-10 pb-5 font-black">DMS and UI/UX</p>
+        <p class="text-[#8cc7e7] text-center text-3xl strokes pt-10 pb-5 font-black">DATABASE TOOLS & UI/UX</p>
         <ul class="outfit s-card flex flex-wrap justify-center [&_li]:bg-white [&_li]:m-3 [&_li]:rounded-2xl 
-         [&_img]:w-30 ">
+         [&_img]:w-20 ">
           <li class="p-5 w-60 card hover:bg-gray-400 scroll-blur">
+
             <img class="my-0 mx-auto"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+
+            <div class="[&_p]:text-[14px] flex flex-col [&_p]:m-1.25 text-center">
               <div>
-                <h3 class="text-[18px] font-medium">Begginer/Intermediate</h3>
-                <p>-Comfortable styling layouts, colors, fonts.</p>
-                <p>-Learning to predict outcomes without preview.</p>
-                <p>-Familiar with flexbox, responsive design, and pseudo-classes.</p>
+                <h3 class="text-[18px] font-medium">Begginer</h3>
+                <h4>MySQL & PhpMyAdmin</h4>
+                <p>-Basic understanding of relational databases, tables, and records.</p>
+                <p>-Comfortable performing simple CRUD operations using phpMyAdmin.</p>
+                <p>-Familiar with basic SQL queries and database structure.</p>
               </div>
             </div>
           </li>
           <li class="p-5 w-60 card scroll-blur">
             <img class="my-0 mx-auto"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+
+            <div class="[&_p]:text-[14px] flex flex-col [&_p]:m-1.25 text-center">
               <div>
                 <h3 class="text-[18px] font-medium">Begginer/Intermediate</h3>
-                <p>-Comfortable structuring pages with semantic elements.</p>
-                <p>-Familiar with forms, inputs, and embedding media.</p>
-                <p>-Understanding accessibility basics (labels, alt text, headings).</p>
+                <h4>Figma</h4>
+                <p>-Comfortable creating wireframes and simple UI designs.</p>
+                <p>-Familiar with layout, spacing, typography, and components.</p>
+                <p>-Able to translate designs into HTML/CSS accurately.</p>
               </div>
             </div>
           </li>
           <li class="p-5 w-60 card scroll-blur">
+
             <img class="my-0 mx-auto"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg" />
+
+            <div class="[&_p]:text-[14px] flex flex-col [&_p]:m-1.25 text-center">
               <div>
-                <h3 class="text-[18px] font-medium">Begginer/Intermediate</h3>
-                <p>-Comfortable structuring pages with semantic elements.</p>
-                <p>-Familiar with forms, inputs, and embedding media.</p>
-                <p>-Understanding accessibility basics (labels, alt text, headings).</p>
-              </div>
-            </div>
-          </li>
-          <li class="p-5 w-60 card scroll-blur">
-            <img class="my-0 mx-auto"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-            <div class="[&_p]:text-[13px] flex flex-col [&_p]:m-1.25 text-center">
-              <div>
-                <h3 class="text-[18px] font-medium">Begginer/Intermediate</h3>
-                <p>-Comfortable structuring pages with semantic elements.</p>
-                <p>-Familiar with forms, inputs, and embedding media.</p>
-                <p>-Understanding accessibility basics (labels, alt text, headings).</p>
+                <h3 class="text-[18px] font-medium">Begginer</h3>
+                <h4>Framer</h4>
+                <p>-Basic experience building simple interactive layouts.</p>
+                <p>-Familiar with components, animations, and responsive behavior.</p>
+                <p>-Comfortable prototyping and testing UI interactions.</p>
               </div>
             </div>
           </li>
       </div>
     </section>
-    <section id="certifiaction-section" class="mt-30">
-      <h2>Certifications Section Here</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
-        text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
-        text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <!----------Projects-->
+    <section id="projects-section" class="mt-30 bg-[#8cc7e7] p-4 scroll-mt-30">
+      <div class="m-4 flex text-center">
+        <h2>PROJECTS</h2>
+        <div class="proj-card">
+          <h3>CONTACT FORM</h3>
+          <a href=""></a>
+        </div>
+        <div class="proj-card">
+          <h3>TASK MANAGER</h3>
+          <a href=""></a>
+        </div>
+        <div class="proj-card">
+          <h3>NOTES APP</h3>
+          <a href=""></a>
+        </div>
+      </div>
+      <div>
+        <h2>CERTFICATIONS</h2>
+      </div>
     </section>
-    <section class="appear-ani bg-amber-200 w-2xs">
-      Resume Section Here
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
-        text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
-        text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <!----------Resume-->
+    <section id="resume-section" class=" bg-amber-200 m-25 mt-2 scroll-mt-25">
+      <div><a href="#">View Resume</a>
+      </div>
     </section>
   </main>
   <script src="script.js"></script>
